@@ -80,6 +80,7 @@
 
   // 9
   console.log(str.slice(1, 2));
+  console.log(str.substring(1,2));
 
 }
 
@@ -102,28 +103,37 @@
   console.log(`${sum}`);
 
   // 12
-  console.log(`${sum / scores.length}`);
+  let avg = sum / scores.length
+  // console.log(`${sum / scores.length}`);
+  console.log(avg);
 
   // 13
-  console.log(Math.floor(`${sum / scores.length}`));
+  // console.log(Math.floor(`${sum / scores.length}`));
+  console.log(Math.floor(avg));
 
   // 14
-  console.log(Math.ceil(`${sum / scores.length}`));
+  // console.log(Math.ceil(`${sum / scores.length}`));
+  console.log(Math.ceil(avg));
 
   // 15
-  console.log(Math.round(`${sum / scores.length}`));
+  // console.log(Math.round(`${sum / scores.length}`));
+  console.log(Math.round(avg));
 
   // 16
-  console.log((sum / scores.length).toFixed(3));
+  // console.log((sum / scores.length).toFixed(3));
+  console.log((avg).toFixed(3));
 
   // 17
-  function getRandomInteger(max) {
-    return Math.floor(Math.random() * (max + 1));
-  }
-  for (let i = 0; i < 10; i++) {
-    const n = getRandomInteger(6);
-    console.log(`${n}`);
-  }
+  // function getRandomInteger(max) {
+  //   return Math.floor(Math.random() * (max + 1));
+  // }
+  // for (let i = 0; i < 10; i++) {
+  //   const n = getRandomInteger(6);
+  //   console.log(`${n}`);
+  // }
+
+  console.log(Math.floor(Math.random()*(6)+1));
 
 }
+
 
